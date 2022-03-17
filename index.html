@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인테리어의 시작,집꾸미기</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- google material icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- swifer slide -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- script -->
+    <script src="js/youtube.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- MO-header -->
+        <div id="mo-header-section">
+            <h1><a href="index.html"><img src="images/m_images/mo_Top_logo.png" alt="집 꾸미기"></a></h1>
+            <a href="javascript:void(0)" class="login">
+                <p>로그인 / 가입</p>
+            </a>
+            <span class="menu-toggle-btn">
+                <span>햄버거메뉴</span>
+                <span>햄버거메뉴</span>
+                <span>햄버거메뉴</span>
+            </span>
+            <!-- hamberger sub -->
+            <div class="mo-sub-menu">
+                <ul class="sub-1">
+                    <li><a href="#">앱 다운로드</a></li>
+                    <li><a href="#">SNS</a></li>
+                    <li><a href="#">입점문의</a></li>
+                </ul>
+                <div class="sub-menu-contents">
+                    <span>우리집에 왜 왔니!?<br>집 꾸미러 왔단다 !</span>
+                    <ul class="sub-2">
+                        <li><a href="#">컨텐츠</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PC - header -->
+        <div id="pc-header-section">
+            <h1><a href="index.html"><img src="images/p_images/Top_logo.png" alt="집 꾸미기"></a></h1>
+            <nav id="top-nav">
+                <a href="#" class="hover-this"><span>카테고리</span></a>
+                <a href="#" class="hover-this"><span>스토어</span></a>
+                <a href="#" class="hover-this"><span>컨텐츠</span></a>
+                <a href="#" class="hover-this"><span>커뮤니티</span></a>
+                <div class="cursor"></div>
+            </nav>
+            <input type="text" placeholder="검색어를 입력하세요">
+            <span class="material-icons">search</span>
+        </div>
+
+    </header>
+
+    <!-- MO-slide -->
+    <div class="mo-top-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/m_images/m_slide1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/m_images/m_slide2.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/m_images/m_slide3.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- PC-slide -->
+    <div class="pc-slider">
+        <div class="pc-slide-inner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/p_images/pc-slide1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/p_images/pc-slide2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/p_images/pc-slide3.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <p>more</p>
+        </div>
+    </div>
+
+    <!-- 네온 뱃지 -->
+    <div class="sign-four">
+        어서와 <em>!</em><br>
+        <i class="fa currency" aria-hidden="true">집</i>
+        <i class="fa currency" aria-hidden="true">꾸</i>
+        <i class="fa currency" aria-hidden="true">미</i>
+        <i class="fa currency" aria-hidden="true">기</i>
+    </div>
+    </div>
+
+
+    <!-- MO-category -->
+    <div class="mo-category">
+        <div class="category category1">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category1.png" alt=""></a>
+                <figcaption>가구</figcaption>
+            </figure>
+        </div>
+        <div class="category category2">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category2.png" alt=""></a>
+                <figcaption>패브릭</figcaption>
+            </figure>
+        </div>
+        <div class="category category3">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category3.png" alt=""></a>
+                <figcaption>조명</figcaption>
+            </figure>
+        </div>
+        <div class="category category4">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category4.png" alt=""></a>
+                <figcaption>주방용품</figcaption>
+            </figure>
+        </div>
+        <div class="category category5">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category5.png" alt=""></a>
+                <figcaption>수납/정리</figcaption>
+            </figure>
+        </div>
+        <div class="category category6">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category6.png" alt=""></a>
+                <figcaption>가전</figcaption>
+            </figure>
+        </div>
+        <div class="category category7">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category7.png" alt=""></a>
+                <figcaption>인테리어소품</figcaption>
+            </figure>
+        </div>
+        <div class="category category8">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category8.png" alt=""></a>
+                <figcaption>생활용품</figcaption>
+            </figure>
+        </div>
+        <div class="category category9">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category9.png" alt=""></a>
+                <figcaption>셀프인테리어</figcaption>
+            </figure>
+        </div>
+        <div class="category category10">
+            <figure>
+                <a href="#"><img src="images/m_images/mo_category10.png" alt=""></a>
+                <figcaption>애견용품</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- MO-Today Sale -->
+    <div class="mo-today-sale">
+        <div class="sale-title">
+            <h4>단 하루!</h4>
+            <h1>Today Sale</h1>
+            <div id="timer">
+                <span id="hours"></span><span class="zhffhs">:</span>
+                <span id="minutes"></span><span class="zhffhs">:</span>
+                <span id="second"></span>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/m_images/mo-today-sale1.png" alt="slide1"></div>
+                <div class="swiper-slide"><img src="images/m_images/mo-today-sale2.png" alt="slide1"></div>
+                <div class="swiper-slide"><img src="images/m_images/mo-today-sale3.png" alt="slide1"></div>
+                <div class="swiper-slide"><img src="images/m_images/mo-today-sale4.png" alt="slide1"></div>
+                <div class="swiper-slide"><img src="images/m_images/mo-today-sale5.png" alt="slide1"></div>
+                <div class="swiper-slide"><img src="images/m_images/mo-today-sale6.png" alt="slide1"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- tab-today-sale -->
+        <div class="tab-today-sale">
+            <div class="pc-main-sale">
+                <div><img src="images/p_images/pc-sale-main.png" alt="pc-sale"></div>
+            </div>
+            <div class="main-sale">
+                <div><img src="images/m_images/tab-today-sale-main.png" alt=""></div>
+            </div>
+            <div class="sub-sale">
+                <ul class="tab-sale-fist-line">
+                    <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale1.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale2.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale3.png" alt=""></a></li>
+                </ul>
+                <ul class="tab-sale-second-line">
+                    <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale4.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale5.png" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale6.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="section-line">
+        <p></p>
+    </div>
+
+
+    <!-- MO-best -->
+    <div class="mo-best scroll-spy">
+        <div class="best-title">
+            <h1>Best Product</h1>
+            <div class="best-comment">
+                <span class="best-ment">지금 ! 딱 ! <br> 인기상품을 한 눈에 !</span>
+                <span id="this-time">현재시간 기준</span>
+            </div>
+        </div>
+        <div class="swipe-slide-section">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/m_images/bestFurni1.png" alt="slide1"></div>
+                    <div class="swiper-slide"><img src="images/m_images/bestfabric1.png" alt="slide1"></div>
+                    <div class="swiper-slide"><img src="images/m_images/bestdisplay1.png" alt="slide1"></div>
+                    <div class="swiper-slide"><img src="images/m_images/bestlight1.png" alt="slide1"></div>
+                    <div class="swiper-slide"><img src="images/m_images/bestlife1.png" alt="slide1"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="section-line">
+        <p></p>
+    </div>
+
+
+    <!-- MO-user interior -->
+    <div class="mo-interior scroll-spy">
+        <div class="user-title">
+            <h4>너의 방을 보여줘 !</h4>
+            <h1>User Interior</h1>
+        </div>
+        <div class="mo-user-picture">
+            <ul class="mo-user">
+                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterio1.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior2.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior3.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior4.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior5.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- tab-user -->
+    <div class="tab-interior scroll-spy">
+        <div class="user-title">
+            <img src="images/m_images/tab-userinterior-title.png" alt="">
+        </div>
+        <div class="tab-user-picture">
+            <ul class="tab-user">
+                <li><img src="images/m_images/tab-user-interior1.png" alt=""></li>
+                <li><img src="images/m_images/tab-user-interior2.png" alt=""></li>
+                <li><img src="images/m_images/tab-user-interior3.png" alt=""></li>
+                <li><img src="images/m_images/tab-user-interior4.png" alt=""></li>
+            </ul>
+        </div>
+        <a href="javascript:void(0)">
+            <p>더 구경하러 가기 >></p>
+        </a>
+    </div>
+    <!-- pc-user -->
+    <div class="pc-user-interior scroll-spy">
+        <div class="user-title">
+            <img src="images/p_images/user-interior-title.png" alt="" class="floating4" >
+        </div>
+        <div class="pc-user-picture">
+            <ul>
+                <li><img src="images/p_images/pc-userinterior1.png" alt="" class="floating1"></li>
+                <li><img src="images/p_images/pc-userinterior2.png" alt="" class="floating2"></li>
+                <li><img src="images/p_images/pc-userinterior3.png" alt="" class="floating3"></li>
+                <li><img src="images/p_images/pc-userinterior4.png" alt="" class="floating1"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-line">
+        <p></p>
+    </div>
+
+    <!-- youtybe -->
+    <section class="youtube">
+        <div class="youtube__area">
+            <div id="player"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer-section">
+        <footer>
+            <!-- category -->
+            <div class="footer-category">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">입점문의</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">회사소개</a></li>
+                </ul>
+            </div>
+    
+            <!-- customer  -->
+            <div class="customer-section">
+                <div class="customer-inner">
+                    <!-- 고객센터 -->
+                    <div class="cs-part">
+                        <h4>고객센터</h4>
+                        <p>1522-7966 <br>
+                            OPEN AM 11:00 - PM 5:00<br>
+                            (점심시간 12:00 ~ 13:00)<br>
+                            SAT, SUN, HOLIDAY OFF.</p>
+                    </div>
+                    <!-- 공지사항 -->
+                    <div class="notice">
+                        <div class="notice-inner">
+                            <h4>집꾸미기 소식</h4>
+                            <ul>
+                                <li><a href="#">"꾸며줘 홈즈" 이벤트 중단 안내</a></li>
+                                <li><a href="#">2022년 설 연휴 안내</a></li>
+                                <li><a href="#">2021년 추석 연휴 안내</a></li>
+                                <li><a href="#">회원 등급제 변경 완료 안내</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- sns -->
+                    <div class="sns">
+                        <div class="social">
+                            <h4>SNS</h4>
+                            <ul>
+                                <li><a href="#"><img src="images/m_images/Youtube.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/m_images/Instagram.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/m_images/Facebook.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/m_images/KakaoTalk.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/m_images/Twitter.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="app">
+                            <h4>App Download</h4>
+                            <ul>
+                                <li><a href="#"><img src="images/m_images/Apple.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/m_images/GooglePlay.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer address -->
+            <address>
+                <div class="address-inner">
+                    회사명: 주식회사 집꾸미기 대표: 길경환 대표전화: 1522-7966 <br>
+                    주소: 서울특별시 성동구 왕십리로 125, 11층 1101호(성수동1가) 사업자등록번호: 142-81-50856 통신판매업신고 제 2020-서울성동-00618 호 [사업자정보확인]
+                    <br>
+                    개인정보관리책임자: 이찬희(info@osquarecorp.com) <br>
+                    copyright © 집꾸미기 all rights reserved.
+                </div>
+            </address>
+        </footer>
+    </section>
+   
+    <div id="to-top">
+        <div class="material-icons">arrow_upward</div>
+    </div>    
+</body>
+
+</html>
