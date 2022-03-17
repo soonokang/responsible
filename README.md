@@ -1,2 +1,2 @@
 ﻿### reponsibal web project panel design
-![introduce image](panel.png)
+![introduce image](../panel.png)
