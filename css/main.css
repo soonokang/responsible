@@ -21,7 +21,6 @@ a{
     display: block;
     text-decoration: none;
 }
-a:hover{cursor: none;}
 img{display: block;}
 .tab-today-sale{display: none;}
 .tab-interior{display: none;}
@@ -702,6 +701,7 @@ div#to-top:hover{
         cursor: none;
        
     }
+    a:hover{cursor: none;}
     #mo-header-section{display: none;}
     #pc-header-section{display: block;}
     /* top - logo */
