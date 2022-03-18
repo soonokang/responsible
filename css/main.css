@@ -20,6 +20,7 @@ html,body{
 a{
     display: block;
     text-decoration: none;
+    cursor: pointer;
 }
 img{display: block;}
 .tab-today-sale{display: none;}
