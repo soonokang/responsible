@@ -1,2 +1,2 @@
 ﻿### reponsibal web project panel design
-![responsibla panel](./images/p_images/panel.png)
+![responsibla panel](./images/panel.png)
