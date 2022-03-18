@@ -28,6 +28,8 @@ img{display: block;}
 .pc-slider{display: none;}
 .sign-four{display: none;}
 .pc-user-interior{display: none;}
+
+
 /* mobile */
 /* mo-header */
 #pc-header-section{display: none;}
@@ -488,7 +490,7 @@ div#to-top{
     color: #fff;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 20px;
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -995,6 +997,7 @@ div#to-top:hover{
         margin: auto;
         padding-top: 0;
         margin-bottom: 100px;
+        position: relative;
     }
     .pc-user-interior ul{
         width: 100%;
@@ -1036,24 +1039,17 @@ div#to-top:hover{
     .pc-user-interior .pc-user-picture ul li img:hover{
         transform: scale(1.15);
     }
+    .pc-user-interior > p{
+        position: absolute;
+        bottom: 90px;
+        left : 15%;
+        color :#EE6D6D;
+        font-size: 1.3em;
+        font-family: 'Jal_Onuel';
+    }
     .youtube{
         margin-top: 100px;
     }
-    /* spy */
-.back-to-position{
-    opacity: 0;
-    transition: 1s;
-}
-.back-to-position.to-right{
-    transform: translateX(-150px);
-}
-.back-to-position.to-left{
-    transform: translateX(150px);
-}
-.show .back-to-position{
-    opacity: 1;
-    transform: translateX(0);
-}
 
     /* footer */
     section.footer-section{

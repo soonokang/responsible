@@ -157,3 +157,15 @@ floatingObject('.floating1', 1, 25);
 floatingObject('.floating2', 0.5, 25);
 floatingObject('.floating3', 1.65, 25);
 floatingObject('.floating4', 1.75, 25)
+
+gsap.from(".mo-today-sale", {
+  opacity: 0, 
+  y: 100, 
+  duration: 1,
+});
+gsap.from(".mo-best", {
+  opacity: 0, 
+  y: 100, 
+  duration: 1,
+});
+
