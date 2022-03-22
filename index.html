@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,11 +17,15 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"
+        integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Scroll Magic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <!-- script -->
@@ -171,17 +176,17 @@
     </div>
 
     <!-- MO-Today Sale -->
-    <div class="mo-today-sale .scroll-spy">
-        <div class="sale-title .back-to-position">
+    <div class="mo-today-sale scroll-spy">
+        <div class="sale-title back-to-position to-left delay-0">
             <h4>단 하루!</h4>
             <h1>Today Sale</h1>
-            <div id="timer">
+            <div id="timer" class="back-to-position to-left delay-1">
                 <span id="hours"></span><span class="zhffhs">:</span>
                 <span id="minutes"></span><span class="zhffhs">:</span>
                 <span id="second"></span>
             </div>
         </div>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper back-to-position to-left delay-2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="images/m_images/mo-today-sale1.png" alt="slide1"></div>
                 <div class="swiper-slide"><img src="images/m_images/mo-today-sale2.png" alt="slide1"></div>
@@ -194,14 +199,16 @@
         </div>
 
         <!-- tab-today-sale -->
-        <div class="tab-today-sale">
-            <div class="pc-main-sale">
-                <div><img src="images/p_images/pc-sale-main.png" alt="pc-sale"></div>
+        <div class="tab-today-sale scroll-spy">
+            <div class="pc-main-sale back-to-position to-left delay-3">
+                <div>
+                    <img src="images/p_images/pc-sale-main.png" alt="pc-sale">
+                </div>
             </div>
-            <div class="main-sale">
+            <div class="main-sale back-to-position to-left delay-2">
                 <div><img src="images/m_images/tab-today-sale-main.png" alt=""></div>
             </div>
-            <div class="sub-sale">
+            <div class="sub-sale back-to-position to-left delay-3">
                 <ul class="tab-sale-fist-line">
                     <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale1.png" alt=""></a></li>
                     <li><a href="javascript:void(0)"><img src="images/m_images/mo-today-sale2.png" alt=""></a></li>
@@ -223,14 +230,14 @@
 
     <!-- MO-best -->
     <div class="mo-best scroll-spy">
-        <div class="best-title">
+        <div class="best-title sale-title back-to-position to-left delay-0">
             <h1>Best Product</h1>
             <div class="best-comment">
                 <span class="best-ment">지금 ! 딱 ! <br> 인기상품을 한 눈에 !</span>
                 <span id="this-time">현재시간 기준</span>
             </div>
         </div>
-        <div class="swipe-slide-section">
+        <div class="swipe-slide-section sale-title back-to-position to-left delay-1">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="images/m_images/bestFurni1.png" alt="slide1"></div>
@@ -252,33 +259,42 @@
 
 
     <!-- MO-user interior -->
-    <div class="mo-interior scroll-spy">
-        <div class="user-title">
-            <h4>너의 방을 보여줘 !</h4>
-            <h1>User Interior</h1>
+    <div class="mo-interior">
+        <div class="user-title scroll-spy">
+            <h4 class="back-to-position to-left delay-0">너의 방을 보여줘 !</h4>
+            <h1 class="back-to-position to-left delay-0">User Interior</h1>
         </div>
         <div class="mo-user-picture">
             <ul class="mo-user">
-                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterio1.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior2.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior3.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior4.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior5.png" alt=""></a></li>
+                <li class="scroll-spy"><a href="javascript:void(0)"><img src="images/m_images/mo-userInterio1.png"
+                            alt="" class="back-to-position to-left delay-0"></a></li>
+                <li class="scroll-spy"><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior2.png"
+                            alt="" class="back-to-position to-left delay-0"></a></li>
+                <li class="scroll-spy"><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior3.png"
+                            alt="" class="back-to-position to-left delay-0"></a></li>
+                <li class="scroll-spy"><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior4.png"
+                            alt="" class="back-to-position to-left delay-0"></a></li>
+                <li class="scroll-spy"><a href="javascript:void(0)"><img src="images/m_images/mo-userInterior5.png"
+                            alt="" class="back-to-position to-left delay-0"></a></li>
             </ul>
         </div>
     </div>
 
     <!-- tab-user -->
-    <div class="tab-interior scroll-spy">
-        <div class="user-title">
-            <img src="images/m_images/tab-userinterior-title.png" alt="">
+    <div class="tab-interior">
+        <div class="user-title scroll-spy">
+            <img src="images/m_images/tab-userinterior-title.png" alt="" class="back-to-position to-right">
         </div>
         <div class="tab-user-picture">
             <ul class="tab-user">
-                <li><img src="images/m_images/tab-user-interior1.png" alt=""></li>
-                <li><img src="images/m_images/tab-user-interior2.png" alt=""></li>
-                <li><img src="images/m_images/tab-user-interior3.png" alt=""></li>
-                <li><img src="images/m_images/tab-user-interior4.png" alt=""></li>
+                <li class="scroll-spy"><img src="images/m_images/tab-user-interior1.png" alt=""
+                        class="back-to-position to-right1"></li>
+                <li class="scroll-spy"><img src="images/m_images/tab-user-interior2.png" alt=""
+                        class="back-to-position to-left1"></li>
+                <li class="scroll-spy"><img src="images/m_images/tab-user-interior3.png" alt=""
+                        class="back-to-position to-right1"></li>
+                <li class="scroll-spy"><img src="images/m_images/tab-user-interior4.png" alt=""
+                        class="back-to-position to-left1"></li>
             </ul>
         </div>
         <a href="javascript:void(0)">
@@ -286,9 +302,9 @@
         </a>
     </div>
     <!-- pc-user -->
-    <div class="pc-user-interior scroll-spy">
-        <div class="user-title">
-            <img src="images/p_images/user-interior-title.png" alt="" class="floating4" >
+    <div class="pc-user-interior">
+        <div class="user-title scroll-spy">
+            <img src="images/p_images/user-interior-title.png" alt="" class="floating4 back-to-position to-right">
         </div>
         <div class="pc-user-picture">
             <ul>
@@ -325,7 +341,7 @@
                     <li><a href="#">회사소개</a></li>
                 </ul>
             </div>
-    
+
             <!-- customer  -->
             <div class="customer-section">
                 <div class="customer-inner">
@@ -383,10 +399,10 @@
             </address>
         </footer>
     </section>
-   
+
     <div id="to-top">
         <div class="material-icons">arrow_upward</div>
-    </div>    
+    </div>
 </body>
 
 </html>
